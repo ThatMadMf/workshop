@@ -31,11 +31,11 @@ def calc(x):
         return
 
 
-print("X value is out of function range")
+print('X value is out of function range')
 repeat = True
 
 while repeat:
-    user_input = input("Enter X or press x to exit\n")
+    user_input = input('Enter X or press x to exit\n')
 
     if user_input in ['x', 'X']:
         repeat = False
