@@ -30,14 +30,17 @@ def calc(x):
         print(f'Result is: {result}')
         return
 
+    print('X value is out of function range')
 
-print('X value is out of function range')
+
 repeat = True
+break_key = input('Enter key with will close the program\n')
 
 while repeat:
-    user_input = input('Enter X or press x to exit\n')
+    user_input = input(f'Enter x value to calculate. Enter {break_key} to exit\n')
 
-    if user_input in ['x', 'X']:
+    if user_input == break_key:
         repeat = False
+        print(f'{break_key} is pressed. Shutting down')
     else:
         calc(int(user_input))
